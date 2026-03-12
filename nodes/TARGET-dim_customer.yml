@@ -15,7 +15,9 @@ operation:
     insertZeroKeyStr: UNKNOWN
     insertZeroKeySurrogateKey: "0"
     insertZeroKeyTimestamp: "1900-01-01 00:00:00.000"
-    lastModifiedColumn: ""
+    lastModifiedColumn:
+      columnCounter: 66db763d-84cd-4a19-a095-1b888d885f72
+      stepCounter: 3ca97783-552e-4720-ac48-9f463d36ca32
     lastModifiedComparison: true
     orderby: false
     orderbycolumn:
@@ -25,14 +27,14 @@ operation:
     preSQL: ""
     selectDistinct: false
     testsEnabled: false
-    treatNullAsCurrentTimestamp: false
+    treatNullAsCurrentTimestamp: true
     truncateBefore: false
-    type2Dimension: false
+    type2Dimension: true
   database: ""
   deployEnabled: true
   description: ""
   isMultisource: false
-  locationName: SRC
+  locationName: TARGET
   materializationType: table
   metadata:
     appliedNodeTests: []

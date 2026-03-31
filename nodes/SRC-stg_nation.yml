@@ -1,0 +1,136 @@
+fileVersion: 1
+id: fda35e4c-ff1b-4bde-b162-ef793e12d411
+name: stg_nation
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c3971f0-6b8c-4668-bd07-f2396d4025ff
+          stepCounter: fda35e4c-ff1b-4bde-b162-ef793e12d411
+        config: {}
+        dataType: LONG
+        description: ""
+        name: n_nationkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 75b631a3-c8c3-4845-b4ae-ffdc6dd2b2b2
+                stepCounter: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67ff9f84-9d35-4706-a1e8-60645aee2409
+          stepCounter: fda35e4c-ff1b-4bde-b162-ef793e12d411
+        config: {}
+        dataType: STRING
+        description: ""
+        name: n_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 078baa26-df0a-44f3-b21c-b801c85e0615
+                stepCounter: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d940a014-232d-4c58-b1a5-9b20013b648d
+          stepCounter: fda35e4c-ff1b-4bde-b162-ef793e12d411
+        config: {}
+        dataType: LONG
+        description: ""
+        name: n_regionkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1309ef2-b432-4167-9465-600d63831e8e
+                stepCounter: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1be0cc0-4ec8-4fca-85c6-ab0fa6e50c95
+          stepCounter: fda35e4c-ff1b-4bde-b162-ef793e12d411
+        config: {}
+        dataType: STRING
+        description: ""
+        name: n_comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e66cf898-6975-443f-92c3-cca3f9a2a213
+                stepCounter: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f6d8260-53d4-4071-8a66-5d346ee6a9fd
+          stepCounter: fda35e4c-ff1b-4bde-b162-ef793e12d411
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: WHERE_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "NULL"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4e2fc5a-9b04-49e2-95af-a11fd6295811
+          stepCounter: fda35e4c-ff1b-4bde-b162-ef793e12d411
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Qualify_FLG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "Y"
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          nation: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: nation
+        join:
+          joinCondition: FROM {{ ref('SRC', 'nation') }} `nation`
+        name: stg_nation
+        noLinkRefs: []
+  name: stg_nation
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

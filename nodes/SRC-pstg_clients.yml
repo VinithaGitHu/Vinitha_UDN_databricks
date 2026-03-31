@@ -1,0 +1,242 @@
+fileVersion: 1
+id: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+name: pstg_clients
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: UNION ALL
+    lastModifiedColumn:
+      columnCounter: 3238fd80-5b88-4d9f-8810-fbdee00ad374
+      stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+    lastModifiedComparison: true
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    treatNullAsCurrentTimestamp: true
+    truncateBefore: false
+    type2Dimension: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 699209d8-2db1-4a0e-a368-282ed861ab50
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: BIGINT
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: pstg_clients_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6ce137a-3634-4e07-bbfc-0ea66d7d4c02
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: INT
+        description: ""
+        isBusinessKey: true
+        name: client_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1c7fde0e-df5b-448c-9142-3ff0ccc83fd2
+                stepCounter: ae882978-2c13-4017-9f1e-436047b56c43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c3137d3-52ff-43c8-97d5-55637ae0d449
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: STRING
+        description: ""
+        name: client_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b8c7898b-2996-42c3-8ffb-85e5a1016d7f
+                stepCounter: ae882978-2c13-4017-9f1e-436047b56c43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9b4cb50-301e-4f45-aea3-0a52a50a7ca9
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: STRING
+        description: ""
+        name: email
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f7de3922-4870-429b-9f6c-c276715e6552
+                stepCounter: ae882978-2c13-4017-9f1e-436047b56c43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2ec8d4c-cdfe-4ac8-90e7-976cca1acc5c
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: STRING
+        description: ""
+        name: region
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b0065c3-28f8-4f99-90e9-e3d1d8f4eede
+                stepCounter: ae882978-2c13-4017-9f1e-436047b56c43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3238fd80-5b88-4d9f-8810-fbdee00ad374
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: update_time
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 159ea363-274b-4c05-ac96-b2fa83782cb9
+                stepCounter: ae882978-2c13-4017-9f1e-436047b56c43
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cb5d86c-6ece-4aa9-839e-7bab9fc6ef90
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        isSystemVersion: true
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39c65c6e-580a-4143-811e-f826d3170e8d
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        isSystemCurrentFlag: true
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 774766e0-2856-49df-ac4a-8668bb579b8d
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemStartDate: true
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f76ed063-83a3-4de4-9190-5d0c71b545a0
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemEndDate: true
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbef5bef-8ad9-482f-9a10-c611c4f405a8
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b4c263d-31cf-4308-a7d5-852a18c163df
+          stepCounter: 9d75c3a1-1c94-4bb5-b047-b5aa081d76f8
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          clients: ae882978-2c13-4017-9f1e-436047b56c43
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: clients
+        join:
+          joinCondition: FROM {{ ref('SRC', 'clients') }} `clients`
+        name: pstg_clients
+        noLinkRefs: []
+  name: pstg_clients
+  overrideSQL: false
+  schema: ""
+  sqlType: "581"
+  type: sql
+  version: 1
+type: Node

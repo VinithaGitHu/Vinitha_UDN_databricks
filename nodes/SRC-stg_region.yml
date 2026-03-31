@@ -1,0 +1,122 @@
+fileVersion: 1
+id: 71a7eff9-add1-4417-8daf-c36cd6f247ba
+name: stg_region
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 041aeb4a-2689-499d-85d1-07018a40d031
+          stepCounter: 71a7eff9-add1-4417-8daf-c36cd6f247ba
+        config: {}
+        dataType: LONG
+        description: ""
+        name: r_regionkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f1c82c9-f409-406b-b2ab-9fef8ebd9d03
+                stepCounter: fbfd43b9-bdd6-457d-8b3c-f020f02a3f07
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34a1f1f1-6d07-4890-8f31-822b9664cf7c
+          stepCounter: 71a7eff9-add1-4417-8daf-c36cd6f247ba
+        config: {}
+        dataType: STRING
+        description: ""
+        name: r_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e65df32c-1ca2-4b99-aa42-0048e14d6b8b
+                stepCounter: fbfd43b9-bdd6-457d-8b3c-f020f02a3f07
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2bb361a2-9547-4838-b665-840e09e71fe9
+          stepCounter: 71a7eff9-add1-4417-8daf-c36cd6f247ba
+        config: {}
+        dataType: STRING
+        description: ""
+        name: r_comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 27ba8926-e73f-49aa-a67e-d9599305cfcc
+                stepCounter: fbfd43b9-bdd6-457d-8b3c-f020f02a3f07
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ea978e6-75f5-4f8e-9051-1e05cc990b31
+          stepCounter: 71a7eff9-add1-4417-8daf-c36cd6f247ba
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: WHERE_ORDER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "NULL"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e6e2463-931f-4e72-8e70-83c27f58ad67
+          stepCounter: 71a7eff9-add1-4417-8daf-c36cd6f247ba
+        config: {}
+        dataType: Varchar(1)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: QUALIFY_FLG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "Y"
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          region: fbfd43b9-bdd6-457d-8b3c-f020f02a3f07
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: region
+        join:
+          joinCondition: FROM {{ ref('SRC', 'region') }} `region`
+        name: stg_region
+        noLinkRefs: []
+  name: stg_region
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

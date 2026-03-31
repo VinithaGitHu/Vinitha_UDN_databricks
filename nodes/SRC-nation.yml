@@ -1,0 +1,84 @@
+fileVersion: 1
+id: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+name: nation
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75b631a3-c8c3-4845-b4ae-ffdc6dd2b2b2
+          stepCounter: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+        config: {}
+        dataType: LONG
+        defaultValue: ""
+        description: ""
+        name: n_nationkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 078baa26-df0a-44f3-b21c-b801c85e0615
+          stepCounter: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: n_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1309ef2-b432-4167-9465-600d63831e8e
+          stepCounter: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+        config: {}
+        dataType: LONG
+        defaultValue: ""
+        description: ""
+        name: n_regionkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e66cf898-6975-443f-92c3-cca3f9a2a213
+          stepCounter: 2fc4466a-6697-4c81-9b07-0ec66594dc3b
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: n_comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: nation
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
